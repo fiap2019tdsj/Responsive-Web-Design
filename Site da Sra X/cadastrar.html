@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sra X</title>
+</head>
+
+<body>
+    <div id="cabecalho">
+        <div class="banner">
+            <!-- Inserir a figura do banner -->
+        </div>
+        <!-- Fim da div banner -->
+        <div class="menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="cadastrar.html">Cadastrar Receita</a></li>
+                <li><a href="#">Categorias de Receitas</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </div>
+        <!-- Fim da div menu -->
+        <div class="links-importantes">
+            <p id="redes-sociais">
+                <a href="https://www.facebook.com"> <img src="imagens/facebook.png" alt="facebook"></a>
+                <a href="https://www.instagram.com"> <img src="imagens/instagram.png" alt="facebook"></a>
+                <a href="https://www.twitter.com"> <img src="imagens/twitter.png" alt="facebook"></a>
+                <a href="https://www.youtube.com"> <img src="imagens/youtube.png" alt="facebook"></a>
+            </p>
+            <p id="pesquisa">
+                <input type="search" name="pesquisa" />
+                <input type="image" name="lupa" src="imagens/search.png" alt="Pesquisar">
+            </p>
+        </div>
+        <!-- Fim da div links-importantes -->
+    </div>
+    <!-- Fim da div cabeçalho -->
+    <div id="corpo">
+        <h1>Nova Receita</h1>
+        <form action="salvar.jsp" method="POST">
+            <p>
+                <label for="nome">Nome
+                    <input type="text" name="nome" id="nome" 
+                    placeholder="Digite o nome da receita" size="50">
+                </label>
+            </p>
+
+            <p>
+                <label for="foto">Selecione a foto da receita
+                    <input type="file" name="foto" id="foto">
+                </label>
+            </p>
+
+            <p>
+                <label for="descricao">Descrição da receita
+                    <textarea name="descricao" id="descricao" cols="50" rows="10" 
+                    placeholder="Digite uma pequena descrição sobre a receita"></textarea>
+                </label>
+            </p>
+
+            <p>
+                <fieldset>
+                    <legend>Novo ingrediente</legend>
+
+                    <label for="qtde">Quantidade
+                        <input type="number" name="qtde" id="qtde" min="1" max="1000">
+                    </label>
+
+                    <p>
+                        <label for="unidade">Unidade de Medida
+                            <select name="unidade_medida" id="unidade_medida">
+                                <option value="cs">Colher de sopa</option>
+                                <option value="cc">Colher de chá</option>
+                                <option value="x">Xícara</option>
+                            </select>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="descIngrediente">Descrição do ingrediente
+                            <input type="text" name="descIngrediente" id="descIngrediente" 
+                            placeholder="Digite o nome do ingrediente" size="30" />
+                        </label>
+                    </p>
+
+                    <button id=" btnAdicionar">Adicionar ingrediente</button>
+                </fieldset>
+            </p>
+
+            <p>
+                <h5>Ingredientes adicionados</h5>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Quantidade</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbl-ingredientes">
+                        <tr id="ingrediente">
+                            <td id="qtde-ingrediente">
+
+                            </td>
+                            <td id="desc-ingrediente">
+                                
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </p>
+
+            <p>
+                <label for="modo-preparo">Descrição o modo de preparo
+                    <textarea name="modo-preparo" id="modo-preparo" cols="50" rows="10" 
+                    placeholder="Digite o modo de preparo"></textarea>
+                </label>
+            </p>
+
+            <p>
+                Dificuldade
+                <input type="radio" name="dificuldade" id="facil" value="f">
+                <label for="facil"> Fácil</label>
+                <input type="radio" name="dificuldade" id="medio" value="m">
+                <label for="medio"> Médio</label>
+                <input type="radio" name="dificuldade" id="dificil" value="d">
+                <label for="dificil"> Difícil</label>
+            </p>
+
+            <p>
+                <label for="tempo-preparo">Tempo de preparo
+                    <input type="number" name="tempo-preparo" id="tempo-preparo" min="1">
+                </label>
+                <select name="unidade-tempo" id="unidade-tempo">
+                    <option value="min">Minutos</option>
+                    <option value="h">Horas</option>
+                    <option value="d">Dias</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="rendimento">Rendimentos
+                    <input type="number" name="rendimento" id="rendimento" min="1" max="100"> porções
+                </label>
+            </p>
+
+            <p>
+                Acompanhamentos <br />
+                <table>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="acompanhamentos" value="arroz"> 
+                                Arroz
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="acompanhamentos" value="feijao"> 
+                                Feijão
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="acompanhamentos" value="fritas"> 
+                                Batata Frita
+                            </label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="acompanhamentos" value="salada"> 
+                                Salada
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="acompanhamentos" value="doce"> 
+                                Batata Doce
+                            </label>
+                        </td>
+                        <td>
+                            <label>
+                                <input type="checkbox" name="acompanhamentos" value="pure"> 
+                                Purê de Batata
+                            </label>
+                        </td>
+                    </tr>
+                </table>
+            </p>
+
+            <p>
+                <input type="submit" value="Salvar Receita">
+            </p>
+            
+        </form>
+    </div>
+    <!-- Fim da div corpo -->
+    <div id="rodape">
+        <p>Desenvolvido por 1TDSJ - FIAP &copy; 2019</p> 
+        <p id="redes-sociais">
+            <a href="https://www.facebook.com"> <img src="imagens/facebook.png" alt="facebook"></a>
+            <a href="https://www.instagram.com"> <img src="imagens/instagram.png" alt="facebook"></a>
+            <a href="https://www.twitter.com"> <img src="imagens/twitter.png" alt="facebook"></a>
+            <a href="https://www.youtube.com"> <img src="imagens/youtube.png" alt="facebook"></a>
+        </p>
+    </div>
+    <!-- Fim da div rodapé -->
+</body>
+</html>
