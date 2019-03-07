@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Controle Financeiro</title>
+</head>
+<body>
+    <div id="header">
+        <h1>Controle Pessoal Financeiro</h1>
+    </div>
+    <div id="body">
+        <form action="salvar.jsp" method="POST"></form>
+            <h2>Registros</h2>
+            <hr>
+            <table id="registros">
+                <thead>
+                    <tr>
+                        <th>Descrição</th>
+                        <th>Categoria</th>
+                        <th>Data</th>
+                        <th>Valor</th>
+                        <th>Saldo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Crédito Salário</td>
+                        <td>Crédito</td>
+                        <td>05/10/2017</td>
+                        <td>1500.00</td>
+                        <td>1500.00</td>
+                    </tr>
+                    <tr>
+                        <td>Pãozinho</td>
+                        <td>Débito</td>
+                        <td>06/10/2017</td>
+                        <td>-7.50</td>
+                        <td>1492.50</td>
+                    </tr>
+                    <tr>
+                        <td>Conta de Luz</td>
+                        <td>Débito</td>
+                        <td>08/10/2017</td>
+                        <td>-102.90</td>
+                        <td>1389.60</td>
+                    </tr>
+                    <tr>
+                        <td>Freela</td>
+                        <td>Crédito</td>
+                        <td>08/10/2017</td>
+                        <td>750.00</td>
+                        <td>2139.60</td>
+                    </tr>
+                    <tr>
+                        <td>Cartão de Crédito</td>
+                        <td>Débito</td>
+                        <td>10/10/2017</td>
+                        <td>-2900.00</td>
+                        <td>-760.40</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>
+                <h2>Adicionar nova receita</h2>
+            </p>
+
+            <hr>
+
+            <p>
+                <label for="descricao">Descrição:
+                    <input type="text" id="descricao" placeholder="Digite a descrição da sua receita" size="50">
+                </label>
+            </p>
+            
+            <p>
+                <label for="categoria">Categoria:
+                    <input type="text" id="categoria" placeholder="Digite a categoria da sua receita" size="30">
+                </label>
+            </p>
+
+            <p>
+                <label for="data">Data:
+                    <input type="text" id="data" placeholder="Digite a data da sua receita">
+                </label>
+            </p>
+            <p>
+                <label for="valor">Valor:
+                    <input type="text" id="valor" placeholder="Digite o valor da sua receita">
+                </label>
+            </p>
+
+            <input type="submit" value="Adicionar">
+        </form>
+    </div>
+</body>
+</html>
