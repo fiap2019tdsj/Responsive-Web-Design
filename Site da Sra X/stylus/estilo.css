@@ -1,0 +1,80 @@
+* {
+    padding: 0;
+    margin: 0;
+    font: 13px Arial, Verdana, Sans-Serif black;
+}
+
+#banner {
+    background-color: #377C4E;
+    padding: 20px;
+    text-align: center;
+}
+
+#banner h1 {
+    font-size: 60px;
+    font-family: Verdana, Arial, Sans-Serif;
+    color: #F0F0F0;
+    font-weight: normal;
+}
+
+#banner h2 {
+    color: #F8D83D;
+    font-style: italic;
+}
+
+#menu ul {
+    text-align: center;
+    background-color: #060;
+}
+
+#menu li {
+    display: inline-block;
+    border-right: 2px #030 solid;
+}
+
+#menu li:last-child {
+    border-right: none;
+}
+
+#menu a {
+    display: inline-block;
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    font-size: 20px Arial;
+    font-weight: bold;
+}
+
+#menu a:hover {
+    background-color: white;
+    color: #030;
+    text-decoration: line-through;
+}
+
+#menu li:first-child a {
+    border-radius: 50px 0 0 50px;
+}
+
+#menu li:last-child a {
+    border-radius: 0 50px 50px 0;
+}
+
+#redes-sociais img {
+    height: 24px;
+}
+
+#esquerda {
+    background-color: purple;
+    width: 60%;
+    float: left;
+}
+
+#direita {
+    background-color: green;
+    width: 25%;
+    float: left;
+}
+
+#rodape {
+    clear: both;
+}
