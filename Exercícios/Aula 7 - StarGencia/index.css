@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #f4e9d3;
+}
+
+.cabecalho {
+    background-color:#844076;
+    width: 100%;
+    height: 90px;
+    padding: 30px 0px;
+    color: #f4e9d3;
+}
+
+.logo {
+    float: left;
+    text-align: center;
+    width: 30%;
+    margin-top: 15px;
+}
+
+.logo h2 {
+    font-size: 1em;
+    font-style: italic;
+    font-weight: 100;
+}
+
+.menu {
+    float: left;
+    width: 69%;
+    margin-top: 30px;
+    font-size: 1.3em;
+}
+
+.menu ul li {
+    display: inline;
+    border-right: 1px solid #f4e9d3;
+    padding: 5px;
+}
+
+.menu ul li a:hover {
+    color: black;
+    background-color: #f4e9d3;
+}
+
+.menu ul li:last-child {
+    display: inline;
+    border-right: none;
+}
+
+.menu ul li a {
+    color: #f4e9d3;
+    text-decoration: none;
+}
+
+.corpo {
+    margin-top: 30px;
+    width: 100%;
+}
+
+.conteudo {
+    float: left;
+    width: 60%;
+    padding: 40px;
+}
+
+.conteudo h1 {
+    background-color: #ff7c48;
+    color: white;
+    border-radius: 5px;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 2.5em;
+    font-weight: 100;
+    text-align: center;
+}
+
+.data {
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center !important;
+}
+
+.conteudo h2 {
+    margin: 0 auto 30px auto;
+}
+
+.conteudo h3 {
+    margin: 10px auto;
+}
+
+.conteudo h2, .conteudo h3 {
+    background-color: #cc5579;
+    color: white;
+    border-radius: 5px;
+    text-align: left;
+    padding: 5px;
+    font-weight: 100;
+}
+
+.conteudo img {
+    display: block;
+    margin: 10px auto;
+    width: 70%;
+}
+
+.conteudo li {
+    list-style-type: square;
+    margin: 15px;
+}
+
+.conteudo p {
+    margin: 10px 0;
+}
+
+.formulario {
+    margin-top: 10px;
+    float: left;
+    width: 29%;
+    text-align: center;
+}
+
+.formulario fieldset {
+    margin: 0 auto;
+    background-color: #ffcf4f;
+    width: 70%;
+    height: 300px;
+    padding: 20px;
+    position: relative;
+    border: none;
+    border-radius: 5px;
+}
+
+.formulario fieldset legend {
+    color: #cc5579;
+    float: left;
+    font-weight: bold;
+    clear: both;
+    margin-left: 25%;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.formulario fieldset input {
+    display: block;
+    height: 15px;
+    margin: 10px auto;
+    padding: 10px;
+    width: 80%;
+    font-weight: bold;
+    border: none;
+    border-radius: 2px;
+}
+
+.formulario button {
+    padding: 15px;
+    color: #f4e9d3;
+    font-weight: bold;
+    background-color: #844076;
+    position: absolute;
+    top: 310px;
+    left: 27%;
+    border: none;
+    border-radius: 2px;
+}
+
+input {
+    background-color: #f4e9d3;
+}
+
+.rodape {
+    width: 100%;
+    background-color: #844076;
+    padding: 30px;
+    clear: both;
+    text-align: center;
+    font-weight: bold;
+}
