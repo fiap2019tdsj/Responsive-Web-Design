@@ -30,6 +30,15 @@ public class LoginServlet extends HttpServlet {
 		
 		out.println("<html><body>");
 		
+		usuario = new UsuarioBO().autenticar(usuario);
+		
+		if (usuario != null) {
+			out.println("<h2>Usuário " + usuario.getNome() + " autenticado com sucesso.</h2>");
+		} else {
+			out.println("<h2 style=\"color:red;\">Deu ruim </h2>");
+		}
+		
+		
 		out.println("<a href=\"index.html\"> Voltar para Home</a>");
 		out.println("</body></html>");
 		out.flush();
